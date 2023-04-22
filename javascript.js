@@ -178,7 +178,7 @@ const inputWeights = {
         totalWeight += value * weight;
       }
     });
-  
+    totalWeight = Math.round(totalWeight);
     const tons = Math.ceil(totalWeight / 1000); // ceil rounds up to nearest whole number
     const additionalCost = 80 * tons; // weight times $80
 
